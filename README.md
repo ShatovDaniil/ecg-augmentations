@@ -24,11 +24,13 @@ pip install -e .
 - numpy >= 1.21.0
 - scipy >= 1.7.0
 - wfdb >= 3.4.0
+- h5py>=3.0.0
+- matplotlib>=3.3.0
 
 ## Quick Start
 
 ```python
-from ecg_augmentations import RandomNoiseAdder, HighPassFilter, SignalDrift
+from ecg-augmentations import RandomNoiseAdder, HighPassFilter, SignalDrift
 
 # Add Gaussian noise (recommended range: 0-10%)
 transform = RandomNoiseAdder(low_limit=0.0, high_limit=0.05,
