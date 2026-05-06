@@ -1,7 +1,7 @@
 # ecg-augmentations
 
 Python library for ECG signal augmentation compatible with PyTorch.
-Developed as part of a bachelor's thesis at VŠB-TUO (2026).
+Developed as part of a bachelor's thesis at VUT-FEKT (BUT-FEEC) (2026).
 
 ## Installation
 
