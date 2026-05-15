@@ -87,23 +87,23 @@ augmented_signal, augmented_marks = transform(x, y, global_apply_to_all=True)
 ### Summary of Robustness Thresholds and Recommended Augmentation Ranges
 
 | Augmentation             | Recommended Range   | F1 at Threshold | Category         |
-| :----------------------- | :------------------ | :-------------: | :--------------- |
+| :----------------------- |:--------------------| :-------------: | :--------------- |
 | **ZeroOutSignal**        | 0–40 %              |      0.776      | Stable           |
 | **ZeroOutChannel**       | 1 channel out of N  |      0.773      | Stable           |
 | **ClippingDistortion**   | Unlimited           |      0.769      | Stable           |
 | **HighPassFilter**       | 0.1–10 Hz           |      0.759      | Stable           |
 | **DelaySimulation**      | Unlimited           |      0.776      | Stable           |
 | **RandomTimeShift**      | Unlimited           |      0.776      | Stable           |
-| **Scaling**              | Deviation $\pm$1.0  |      0.739      | Moderately Stable|
-| **RandomAmplitudeVariation**| Deviation $\pm$1.0|     0.735      | Moderately Stable|
+| **Scaling**              | Deviation ±1.0      |      0.739      | Moderately Stable|
+| **RandomAmplitudeVariation**| Deviation ±1.0  |     0.735      | Moderately Stable|
 | **SignalDrift (Linear)** | Amplitude 0–0.05    |      0.737      | Moderately Stable|
-| **SignalDrift (Sinusoidal)**| Amplitude 0–0.05 |      0.734      | Moderately Stable|
+| **SignalDrift (Sinusoidal)**| Amplitude 0–0.05    |      0.734      | Moderately Stable|
 | **BaselineWander**       | 0–0.05 mV           |      0.734      | Moderately Stable|
 | **SinusoidalStretching** | Amplitude 0–0.5     |      0.707      | Moderately Stable|
 | **EMGNoise**             | Amplitude 0–0.5     |      0.705      | Moderately Stable|
 | **RandomNoise**          | 0–10 %              |      0.693      | Moderately Stable|
 | **SignalArtefactAdder**  | With caution        |      0.682      | Moderately Stable|
-| **RandomSignalReplacement**| 0–100 samples     |      0.729      | Moderately Stable|
+| **RandomSignalReplacement**| 0–100 samples       |      0.729      | Moderately Stable|
 | **SignalTimeStretch**    | Factor 0.9–1.3      |      0.695      | Moderately Stable|
 | **SignalCrop**           | 2500–5000 samples   |      0.725      | Moderately Stable|
 | **SignalInverter**       | Not recommended     |      0.661      | Unstable         |
